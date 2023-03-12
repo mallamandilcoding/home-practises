@@ -1,0 +1,9 @@
+.btn {
+  padding: 4px 16px;
+  cursor: pointer;
+  background: transparent;
+  &:hover{
+    background: $black;
+    color:$white;
+  }
+}
