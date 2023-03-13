@@ -1,0 +1,21 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+.home{
+  background: $bg;
+  height: 100vh;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container{
+  width:90%;
+  margin:0 auto;
+}

@@ -1,0 +1,62 @@
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 16px;
+}
+nav .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .navbar a {
+  color: #ebe9e9;
+}
+nav .navbar .right-nav a {
+  position: relative;
+  margin-right: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+nav .navbar .right-nav a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #6a994e;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: 0.5s;
+}
+nav .navbar .right-nav a:hover::after {
+  width: 100%;
+}
+nav .navbar .left-nav a {
+  font-size: 24px;
+  font-weight: 600;
+}
+nav .navbar .left-nav a .main-text {
+  color: #6a994e;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+.home {
+  background: #03080f;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}/*# sourceMappingURL=index.css.map */
