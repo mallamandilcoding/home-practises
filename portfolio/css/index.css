@@ -121,6 +121,12 @@ nav.sticky .right-nav a::after {
 .about .about-content .right-about .tab-content .content ul {
   list-style: none;
 }
+.about .about-content .right-about .tab-content .content ul li {
+  margin-bottom: 16px;
+}
+.about .about-content .right-about .tab-content .content ul li span {
+  font-size: 13px;
+}
 .about .about-content .right-about .tab-content .content.active {
   display: block;
 }
