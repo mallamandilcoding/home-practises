@@ -1,10 +1,13 @@
 .about{
   margin-bottom: 40px;
+  overflow: hidden;
   .about-content{
+    padding-top:66px;
     display:flex;
     gap:24px;
     justify-content: space-between;
-    align-items: stretch;
+    // align-items: stretch;
+    height: 600px;
     .left-about{
       flex:1;
       // height: 500px;

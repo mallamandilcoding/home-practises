@@ -39,3 +39,35 @@ tab.addEventListener("click",(e)=>{
   e.target.classList.add("active");
   tabcontent.querySelector("."+tabname).classList.add("active");
 })
+
+
+
+
+// Aos
+AOS.init();
+
+
+
+
+// for google form submit
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyRwpiNpALmZRas-9afdEoz4sE18RZHCcic5ZVpWJXT5ILT28hrE9uGcEG0UuNxVMF3UA/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.querySelector("#msg");
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(()=>{
+          msg.innerHTML="";
+        },5000)
+        form.reset();
+      })
+      .catch(error => {
+        msg.innerHTML = error.message
+        setTimeout(()=>{
+          msg.innerHTML="";
+        },5000)
+        form.reset();
+      })
+  });

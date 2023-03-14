@@ -17,9 +17,9 @@ nav{
     .right-nav{
      a{
       position: relative;
-      margin-right: 8px;
-      font-size: 14px;
-      font-weight: 300;
+      margin-right: 16px;
+      font-size: 18px;
+      font-weight: 500;
       &::after{
         content: '';
         width: 0;
@@ -37,7 +37,7 @@ nav{
     }
     .left-nav{
       a{
-        font-size: 24px;
+        font-size: 32px;
         font-weight: 600;
         .main-text{
           color: $main;
@@ -50,7 +50,7 @@ nav{
     // position: sticky;
     // width: 100%;
     // top:0px;
-    padding:10px;
+    padding:8px;
     background-color: $main;
     .left-nav a .main-text{
       color: $text;
