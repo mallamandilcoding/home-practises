@@ -4,6 +4,7 @@ nav {
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 10;
 }
 nav .navbar {
   display: flex;
@@ -54,34 +55,55 @@ nav.sticky .right-nav a::after {
   background: #03080f;
   height: 100vh;
 }
-.home .home-content {
+.home .home-img-div {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.home .home-img-div .home-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  width: 60%;
   height: 100%;
 }
-.home .home-content .text-2 {
+.home .home-img-div .home-content .text-2 {
   font-size: 32px;
   font-weight: 600;
 }
-.home .home-content .text-3 {
+.home .home-img-div .home-content .text-3 {
   font-size: 24px;
 }
-.home .home-content .text-3 span {
+.home .home-img-div .home-content .text-3 span {
   font-weight: 500;
 }
+.home .home-img-div .img-div {
+  width: 30%;
+}
+.home .home-img-div .img-div img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
+.about {
+  margin-bottom: 40px;
+}
 .about .about-content {
   display: flex;
   gap: 24px;
   justify-content: space-between;
+  align-items: stretch;
 }
 .about .about-content .left-about {
   flex: 1;
-  height: 500px;
   width: 100%;
-  background-color: red;
+}
+.about .about-content .left-about img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .about .about-content .right-about {
   flex: 2;
@@ -165,6 +187,71 @@ nav.sticky .right-nav a::after {
 }
 .about .about-content .right-about .tab-content .content .bars .line.sql::after {
   width: 70%;
+}
+.about .about-content .right-about .tab-content .content .bars .line.git::after {
+  width: 50%;
+}
+
+.projects {
+  margin-bottom: 40px;
+}
+
+.work-list {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+.work-card {
+  width: 100%;
+  height: 300px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.work-card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.5s;
+}
+.work-card .layer {
+  position: absolute;
+  left: 0;
+  bottom: -105%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #6a994e);
+  overflow: hidden;
+  transition: 0.5s;
+  padding: 10px;
+}
+.work-card .layer * {
+  margin-bottom: 8px;
+}
+.work-card .layer p {
+  font-size: 12px;
+}
+.work-card .layer a {
+  padding: 3px;
+  background: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+}
+.work-card:hover .layer {
+  bottom: 0;
+}
+.work-card:hover img {
+  transform: scale(1.2);
 }
 
 * {
