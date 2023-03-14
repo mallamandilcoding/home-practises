@@ -1,8 +1,10 @@
 nav{
-  position: fixed;
-  width: 100%;
-  top:0;
+  // background-color: red;
   padding: 16px;
+  transition: 0.3s;
+  position:fixed;
+  width:100%;
+  top:0;
   .navbar{
     display: flex;
     justify-content: space-between;
@@ -41,6 +43,16 @@ nav{
           // font-weight: 600;
         }
       }
+    }
+  }
+  &.sticky{
+    // position: sticky;
+    // width: 100%;
+    // top:0px;
+    padding:10px;
+    background-color: $main;
+    .left-nav a .main-text{
+      color: $text;
     }
   }
 }
