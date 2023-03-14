@@ -54,5 +54,8 @@ nav{
     .left-nav a .main-text{
       color: $text;
     }
+    .right-nav a::after{
+      background-color: $text;
+    }
   }
 }
