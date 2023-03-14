@@ -193,11 +193,12 @@ nav.sticky .right-nav a::after {
 }
 
 .projects {
+  padding-top: 24px;
   margin-bottom: 40px;
 }
 
 .work-list {
-  margin-top: 16px;
+  margin-top: 24px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 24px;
@@ -252,6 +253,67 @@ nav.sticky .right-nav a::after {
 }
 .work-card:hover img {
   transform: scale(1.2);
+}
+
+.contact-me {
+  padding-top: 24px;
+  margin-bottom: 40px;
+}
+.contact-me .contact-div {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-me .contact-div h1 {
+  margin-bottom: 16px;
+  font-size: 32px;
+}
+.contact-me .contact-div .btn {
+  padding: 8px 16px;
+  background: green;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 16px;
+  transition: 0.5s;
+}
+.contact-me .contact-div .btn:hover {
+  opacity: 0.6;
+}
+.contact-me .contact-div .contact-left > * {
+  margin-bottom: 8px;
+}
+.contact-me .contact-div .contact-left p i {
+  margin-right: 8px;
+  font-size: 16px;
+}
+.contact-me .contact-div .contact-left .social-media {
+  display: flex;
+  margin-top: 16px;
+}
+.contact-me .contact-div .contact-left .social-media a {
+  margin-right: 16px;
+  transition: 0.5s;
+}
+.contact-me .contact-div .contact-left .social-media a i {
+  font-size: 24px;
+}
+.contact-me .contact-div .contact-left .social-media a:hover {
+  transform: translateY(-2px);
+}
+.contact-me .contact-div .contact-right {
+  flex-basis: 55%;
+}
+.contact-me .contact-div .contact-right form input, .contact-me .contact-div .contact-right form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 16px;
+  margin: 8px 0;
+}
+.contact-me .contact-div .contact-right form button {
+  margin-top: 0;
+  border: 0;
+  cursor: pointer;
 }
 
 * {
